@@ -1,2 +1,260 @@
-import base64
-exec(base64.b64decode(b'JycnCj09PT09PT09PT09PT1TT04gT0YgR0VOSVNZUz09PT09PT09PT09PT09PT09PT09PQpaaWxsYSBtZW1iZXJzIGFkZGluZyBzY3JpcHQKQ29kZWQgYnkgYSBkdW1iYXNzIGtpZC0gRmFjZWJvb2suY29tL2FoYWQzNjAKQXBvbG9naWVzIGlmIGFueXRoaW5nIGluIHRoZSBjb2RlIGlzIGR1bWIgOikKQ29weSB3aXRoIGNyZWRpdHMKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCicnJwoKIyBpbXBvcnQgbGlicmFyaWVzCmZyb20gdGVsZXRob24uc3luYyBpbXBvcnQgVGVsZWdyYW1DbGllbnQKZnJvbSB0ZWxldGhvbi50bC50eXBlcyBpbXBvcnQgSW5wdXRQZWVyQ2hhbm5lbApmcm9tIHRlbGV0aG9uLmVycm9ycy5ycGNlcnJvcmxpc3QgaW1wb3J0IFBlZXJGbG9vZEVycm9yLCBVc2VyUHJpdmFjeVJlc3RyaWN0ZWRFcnJvciwgUGhvbmVOdW1iZXJCYW5uZWRFcnJvciwgQ2hhdEFkbWluUmVxdWlyZWRFcnJvcgpmcm9tIHRlbGV0aG9uLmVycm9ycy5ycGNlcnJvcmxpc3QgaW1wb3J0IENoYXRXcml0ZUZvcmJpZGRlbkVycm9yLCBVc2VyQmFubmVkSW5DaGFubmVsRXJyb3IsIFVzZXJBbHJlYWR5UGFydGljaXBhbnRFcnJvciwgRmxvb2RXYWl0RXJyb3IKZnJvbSB0ZWxldGhvbi50bC5mdW5jdGlvbnMuY2hhbm5lbHMgaW1wb3J0IEludml0ZVRvQ2hhbm5lbFJlcXVlc3QKaW1wb3J0IHN5cwpmcm9tIHRlbGV0aG9uLnRsLmZ1bmN0aW9ucy5tZXNzYWdlcyBpbXBvcnQgSW1wb3J0Q2hhdEludml0ZVJlcXVlc3QsIEFkZENoYXRVc2VyUmVxdWVzdApmcm9tIHRlbGV0aG9uLnRsLmZ1bmN0aW9ucy5jaGFubmVscyBpbXBvcnQgSm9pbkNoYW5uZWxSZXF1ZXN0CmZyb20gdGVsZXRob24udGwudHlwZXMgaW1wb3J0IFVzZXJTdGF0dXNSZWNlbnRseQppbXBvcnQgdGltZQppbXBvcnQgcmFuZG9tCmZyb20gY29sb3JhbWEgaW1wb3J0IGluaXQsIEZvcmUKaW1wb3J0IG9zCmltcG9ydCBwaWNrbGUKCgppbml0KCkKCgpyID0gRm9yZS5SRUQKbGcgPSBGb3JlLkdSRUVOCnJzID0gRm9yZS5SRVNFVAp3ID0gRm9yZS5XSElURQpncmV5ID0gJ1wwMzNbOTdtJwpjeSA9IEZvcmUuQ1lBTgp5ZSA9IEZvcmUuWUVMTE9XCmNvbG9ycyA9IFtyLCBsZywgdywgeWUsIGN5XQppbmZvID0gbGcgKyAnWycgKyB3ICsgJ2knICsgbGcgKyAnXScgKyBycwplcnJvciA9IGxnICsgJ1snICsgciArICchJyArIGxnICsgJ10nICsgcnMKc3VjY2VzcyA9IHcgKyAnWycgKyBsZyArICcqJyArIHcgKyAnXScgKyBycwpJTlBVVCA9IGxnICsgJ1snICsgY3kgKyAnficgKyBsZyArICddJyArIHJzCnBsdXMgPSB3ICsgJ1snICsgbGcgKyAnKycgKyB3ICsgJ10nICsgcnMKbWludXMgPSB3ICsgJ1snICsgbGcgKyAnLScgKyB3ICsgJ10nICsgcnMKCmRlZiBiYW5uZXIoKToKICAgICMgZmFuY3kgbG9nbwogICAgYiA9IFsgICAgICAgICAgCiAgICAnICBUZWxlZ3JhbSBwcm8gbWVtYmVyIGFkZGVyJwogICAgICAgICAgICAnIEthcm1hIGFkZGVyICcsCidCeSAtIEBUaGVUZWxlR3JhbVBybyAgICAnICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgIF0KICAgIGZvciBjaGFyIGluIGI6CiAgICAgICAgcHJpbnQoZid7cmFuZG9tLmNob2ljZShjb2xvcnMpfXtjaGFyfXtyc30nKQogICAgI3ByaW50KCc9PT09PT09PT09PT09U09OIE9GIEdFTklTWVM9PT09PT09PT09PT09PScpCiAgICBwcmludChmJ3tsZ30gIFZlcnNpb246IHt3fTMuMntsZ30gfCBBdXRob3I6IHt3fSBUZWxlZ3JhbSBwcm8gfHRlYW0gS2FybWF7cnN9XG4nKQoKCiMgZnVuY3Rpb24gdG8gY2xlYXIgc2NyZWVuCmRlZiBjbHIoKToKICAgIGlmIG9zLm5hbWUgPT0gJ250JzoKICAgICAgICBvcy5zeXN0ZW0oJ2NscycpCiAgICBlbHNlOgogICAgICAgIG9zLnN5c3RlbSgnY2xlYXInKQoKYWNjb3VudHMgPSBbXQpmID0gb3BlbigndmFycy50eHQnLCAncmInKQp3aGlsZSBUcnVlOgogICAgdHJ5OgogICAgICAgIGFjY291bnRzLmFwcGVuZChwaWNrbGUubG9hZChmKSkKICAgIGV4Y2VwdCBFT0ZFcnJvcjoKICAgICAgICBicmVhawoKIyBjcmVhdGUgc2Vzc2lvbnMoaWYgYW55KSBhbmQgY2hlY2sgZm9yIGFueSBiYW5uZWQgYWNjb3VudHMKIyBUT0RPOiBSZW1vdmUgY29kZSBpbnB1dChqdXN0IHRvIGNoZWNrIGlmIGFuIGFjY291bnQgaXMgYmFubmVkKQpwcmludCgnXG4nICsgaW5mbyArIGxnICsgJyBDaGVja2luZyBmb3IgYmFubmVkIGFjY291bnRzLi4uJyArIHJzKQpmb3IgYSBpbiBhY2NvdW50czoKICAgIHBobiA9IGFbMF0KICAgIHByaW50KGYne3BsdXN9e2dyZXl9IENoZWNraW5nIHtsZ317cGhufScpCiAgICBjbG50ID0gVGVsZWdyYW1DbGllbnQoZidzZXNzaW9ucy97cGhufScsIDM5MTAzODksICc4NmY4NjEzNTJmMGFiNzZhMjUxODY2MDU5YTZhZGJkNicpCiAgICBjbG50LmNvbm5lY3QoKQogICAgYmFubmVkID0gW10KICAgIGlmIG5vdCBjbG50LmlzX3VzZXJfYXV0aG9yaXplZCgpOgogICAgICAgIHRyeToKICAgICAgICAgICAgY2xudC5zZW5kX2NvZGVfcmVxdWVzdChwaG4pCiAgICAgICAgICAgIHByaW50KCdPSycpCiAgICAgICAgZXhjZXB0IFBob25lTnVtYmVyQmFubmVkRXJyb3I6CiAgICAgICAgICAgIHByaW50KGYne2Vycm9yfSB7d317cGhufSB7cn1pcyBiYW5uZWQhe3JzfScpCiAgICAgICAgICAgIGJhbm5lZC5hcHBlbmQoYSkKICAgIGZvciB6IGluIGJhbm5lZDoKICAgICAgICBhY2NvdW50cy5yZW1vdmUoeikKICAgICAgICBwcmludChpbmZvK2xnKycgQmFubmVkIGFjY291bnQgcmVtb3ZlZFtSZW1vdmUgcGVybWFuZW50bHkgdXNpbmcgbWFuYWdlci5weV0nK3JzKQogICAgdGltZS5zbGVlcCgwLjUpCiAgICBjbG50LmRpc2Nvbm5lY3QoKQoKCnByaW50KGluZm8rJyBTZXNzaW9ucyBjcmVhdGVkIScpCmNscigpCmJhbm5lcigpCiMgZnVuYyB0byBsb2cgc2NyYXBpbmcgZGV0YWlscyhsaW5rIG9mIHRoZSBncnAgdG8gc2NyYXBlCiMgYW5kIGN1cnJlbnQgaW5kZXgpIGluIG9yZGVyIHRvIHJlc3VtZSBsYXRlcgpkZWYgbG9nX3N0YXR1cyhzY3JhcGVkLCBpbmRleCk6CiAgICB3aXRoIG9wZW4oJ3N0YXR1cy5kYXQnLCAnd2InKSBhcyBmOgogICAgICAgIHBpY2tsZS5kdW1wKFtzY3JhcGVkLCBpbnQoaW5kZXgpXSwgZikKICAgICAgICBmLmNsb3NlKCkKICAgIHByaW50KGYne2luZm99e2xnfSBTZXNzaW9uIHN0b3JlZCBpbiB7d31zdGF0dXMuZGF0e2xnfScpCiAgICAKCmRlZiBleGl0X3dpbmRvdygpOgogICAgaW5wdXQoZidcbntjeX0gUHJlc3MgZW50ZXIgdG8gZXhpdC4uLicpCiAgICBjbHIoKQogICAgYmFubmVyKCkKICAgIHN5cy5leGl0KCkKCiMgcmVhZCB1c2VyIGRldGFpbHMKdHJ5OgogICAgIyBycXVlc3QgdG8gcmVzdW1lIGFkZGluZwogICAgd2l0aCBvcGVuKCdzdGF0dXMuZGF0JywgJ3JiJykgYXMgZjoKICAgICAgICBzdGF0dXMgPSBwaWNrbGUubG9hZChmKQogICAgICAgIGYuY2xvc2UoKQogICAgICAgIGxvbCA9IGlucHV0KGYne0lOUFVUfXtjeX0gUmVzdW1lIHNjcmFwaW5nIG1lbWJlcnMgZnJvbSB7d317c3RhdHVzWzBdfXtsZ30/IFt5L25dOiB7cn0nKQogICAgICAgIGlmICd5JyBpbiBsb2w6CiAgICAgICAgICAgIHNjcmFwZWRfZ3JwID0gc3RhdHVzWzBdIDsgaW5kZXggPSBpbnQoc3RhdHVzWzFdKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGlmIG9zLm5hbWUgPT0gJ250JzogCiAgICAgICAgICAgICAgICBvcy5zeXN0ZW0oJ2RlbCBzdGF0dXMuZGF0JykKICAgICAgICAgICAgZWxzZTogCiAgICAgICAgICAgICAgICBvcy5zeXN0ZW0oJ3JtIHN0YXR1cy5kYXQnKQogICAgICAgICAgICBzY3JhcGVkX2dycCA9IGlucHV0KGYne0lOUFVUfXtjeX0gUHVibGljL1ByaXZhdGUgZ3JvdXAgbGluayB0byBzY3JhcGUgbWVtYmVyczoge3J9JykKICAgICAgICAgICAgaW5kZXggPSAwCmV4Y2VwdDoKICAgIHNjcmFwZWRfZ3JwID0gaW5wdXQoZid7SU5QVVR9e2N5fSBQdWJsaWMvUHJpdmF0ZSBncm91cCBsaW5rIHRvIHNjcmFwZSBtZW1iZXJzOiB7cn0nKQogICAgaW5kZXggPSAwCiMgbG9hZCBhbGwgdGhlIGFjY291bnRzKHBob25lbnVtYmVycykKYWNjb3VudHMgPSBbXQpmID0gb3BlbigndmFycy50eHQnLCAncmInKQp3aGlsZSBUcnVlOgogICAgdHJ5OgogICAgICAgIGFjY291bnRzLmFwcGVuZChwaWNrbGUubG9hZChmKSkKICAgIGV4Y2VwdCBFT0ZFcnJvcjoKICAgICAgICBicmVhawoKcHJpbnQoZid7aW5mb317bGd9IFRvdGFsIGFjY291bnRzOiB7d317bGVuKGFjY291bnRzKX0nKQpudW1iZXJfb2ZfYWNjcyA9IGludChpbnB1dChmJ3tJTlBVVH17Y3l9IEVudGVyIG51bWJlciBvZiBhY2NvdW50cyB0byB1c2U6IHtyfScpKQpwcmludChmJ3tpbmZvfXtjeX0gQ2hvb3NlIGFuIG9wdGlvbntsZ30nKQpwcmludChmJ3tjeX1bMF17bGd9IEFkZCB0byBwdWJsaWMgZ3JvdXAnKQpwcmludChmJ3tjeX1bMV17bGd9IEFkZCB0byBwcml2YXRlIGdyb3VwJykKY2hvaWNlID0gaW50KGlucHV0KGYne0lOUFVUfXtjeX0gRW50ZXIgY2hvaWNlOiB7cn0nKSkKaWYgY2hvaWNlID09IDA6CiAgICB0YXJnZXQgPSBzdHIoaW5wdXQoZid7SU5QVVR9e2N5fSBFbnRlciBwdWJsaWMgZ3JvdXAgbGluazoge3J9JykpCmVsc2U6CiAgICB0YXJnZXQgPSBzdHIoaW5wdXQoZid7SU5QVVR9e2N5fSBFbnRlciBwcml2YXRlIGdyb3VwIGxpbms6IHtyfScpKQpwcmludChmJ3tncmV5fV8nKjUwKQojc3RhdHVzX2Nob2ljZSA9IHN0cihpbnB1dChmJ3tJTlBVVH17Y3l9IERvIHlvdSB3YW5uYSBhZGQgYWN0aXZlIG1lbWJlcnM/W3kvbl06IHtyfScpKQp0b191c2UgPSBbeCBmb3IgeCBpbiBhY2NvdW50c1s6bnVtYmVyX29mX2FjY3NdXQpmb3IgbCBpbiB0b191c2U6IGFjY291bnRzLnJlbW92ZShsKQp3aXRoIG9wZW4oJ3ZhcnMudHh0JywgJ3diJykgYXMgZjoKICAgIGZvciBhIGluIGFjY291bnRzOgogICAgICAgIHBpY2tsZS5kdW1wKGEsIGYpCiAgICBmb3IgYWIgaW4gdG9fdXNlOgogICAgICAgIHBpY2tsZS5kdW1wKGFiLCBmKQogICAgZi5jbG9zZSgpCnNsZWVwX3RpbWUgPSBpbnQoaW5wdXQoZid7SU5QVVR9e2N5fSBFbnRlciBkZWxheSB0aW1lIHBlciByZXF1ZXN0e3d9W3tsZ30wIGZvciBOb25le3d9XToge3J9JykpCiNwcmludChmJ3tpbmZvfXtsZ30gSm9pbmluZyBncm91cCBmcm9tIHt3fXtudW1iZXJfb2ZfYWNjc30gYWNjb3VudHMuLi4nKQojcHJpbnQoZid7Z3JleX0tJyo1MCkKcHJpbnQoZid7c3VjY2Vzc317bGd9IC0tIEFkZGluZyBtZW1iZXJzIGZyb20ge3d9e2xlbih0b191c2UpfXtsZ30gYWNjb3VudChzKSAtLScpCmFkZGluZ19zdGF0dXMgPSAwCmFwcHJveF9tZW1iZXJzX2NvdW50ID0gMApmb3IgYWNjIGluIHRvX3VzZToKICAgIHN0b3AgPSBpbmRleCArIDYwCiAgICBjID0gVGVsZWdyYW1DbGllbnQoZidzZXNzaW9ucy97YWNjWzBdfScsIDM5MTAzODkgLCAnODZmODYxMzUyZjBhYjc2YTI1MTg2NjA1OWE2YWRiZDYnKQogICAgcHJpbnQoZid7cGx1c317Z3JleX0gVXNlcjoge2N5fXthY2NbMF19e2xnfSAtLSB7Y3l9U3RhcnRpbmcgc2Vzc2lvbi4uLiAnKQogICAgYy5zdGFydChhY2NbMF0pCiAgICBhY2NfbmFtZSA9IGMuZ2V0X21lKCkuZmlyc3RfbmFtZQogICAgdHJ5OgogICAgICAgIGlmICcvam9pbmNoYXQvJyBpbiBzY3JhcGVkX2dycDoKICAgICAgICAgICAgZ19oYXNoID0gc2NyYXBlZF9ncnAuc3BsaXQoJy9qb2luY2hhdC8nKVsxXQogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICBjKEltcG9ydENoYXRJbnZpdGVSZXF1ZXN0KGdfaGFzaCkpCiAgICAgICAgICAgICAgICBwcmludChmJ3twbHVzfXtncmV5fSBVc2VyOiB7Y3l9e2FjY19uYW1lfXtsZ30gLS0gSm9pbmVkIGdyb3VwIHRvIHNjcmFwZScpCiAgICAgICAgICAgIGV4Y2VwdCBVc2VyQWxyZWFkeVBhcnRpY2lwYW50RXJyb3I6CiAgICAgICAgICAgICAgICBwYXNzIAogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGMoSm9pbkNoYW5uZWxSZXF1ZXN0KHNjcmFwZWRfZ3JwKSkKICAgICAgICAgICAgcHJpbnQoZid7cGx1c317Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIEpvaW5lZCBncm91cCB0byBzY3JhcGUnKQogICAgICAgIHNjcmFwZWRfZ3JwX2VudGl0eSA9IGMuZ2V0X2VudGl0eShzY3JhcGVkX2dycCkKICAgICAgICBpZiBjaG9pY2UgPT0gMDoKICAgICAgICAgICAgYyhKb2luQ2hhbm5lbFJlcXVlc3QodGFyZ2V0KSkKICAgICAgICAgICAgcHJpbnQoZid7cGx1c317Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIEpvaW5lZCBncm91cCB0byBhZGQnKQogICAgICAgICAgICB0YXJnZXRfZW50aXR5ID0gYy5nZXRfZW50aXR5KHRhcmdldCkKICAgICAgICAgICAgdGFyZ2V0X2RldGFpbHMgPSBJbnB1dFBlZXJDaGFubmVsKHRhcmdldF9lbnRpdHkuaWQsIHRhcmdldF9lbnRpdHkuYWNjZXNzX2hhc2gpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgZ3JwX2hhc2ggPSB0YXJnZXQuc3BsaXQoJy9qb2luY2hhdC8nKVsxXQogICAgICAgICAgICAgICAgYyhJbXBvcnRDaGF0SW52aXRlUmVxdWVzdChncnBfaGFzaCkpCiAgICAgICAgICAgICAgICBwcmludChmJ3twbHVzfXtncmV5fSBVc2VyOiB7Y3l9e2FjY19uYW1lfXtsZ30gLS0gSm9pbmVkIGdyb3VwIHRvIGFkZCcpCiAgICAgICAgICAgIGV4Y2VwdCBVc2VyQWxyZWFkeVBhcnRpY2lwYW50RXJyb3I6CiAgICAgICAgICAgICAgICBwYXNzCiAgICAgICAgICAgIHRhcmdldF9lbnRpdHkgPSBjLmdldF9lbnRpdHkodGFyZ2V0KQogICAgICAgICAgICB0YXJnZXRfZGV0YWlscyA9IHRhcmdldF9lbnRpdHkKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICBwcmludChmJ3tlcnJvcn17cn0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIEZhaWxlZCB0byBqb2luIGdyb3VwJykKICAgICAgICBwcmludChmJ3tlcnJvcn0ge3J9e2V9JykKICAgICAgICBjb250aW51ZQogICAgcHJpbnQoZid7cGx1c317Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIHtjeX1SZXRyaWV2aW5nIGVudGl0aWVzLi4uJykKICAgICNjLmdldF9kaWFsb2dzKCkKICAgIHRyeToKICAgICAgICBtZW1iZXJzID0gW10KICAgICAgICBtZW1iZXJzID0gYy5nZXRfcGFydGljaXBhbnRzKHNjcmFwZWRfZ3JwX2VudGl0eSwgYWdncmVzc2l2ZT1UcnVlKQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIHByaW50KGYne2Vycm9yfXtyfSBDb3VsZG5cJ3Qgc2NyYXBlIG1lbWJlcnMnKQogICAgICAgIHByaW50KGYne2Vycm9yfXtyfSB7ZX0nKQogICAgICAgIGNvbnRpbnVlCiAgICBhcHByb3hfbWVtYmVyc19jb3VudCA9IGxlbihtZW1iZXJzKQogICAgYXNzZXJ0IGFwcHJveF9tZW1iZXJzX2NvdW50ICE9IDAKICAgIGlmIGluZGV4ID49IGFwcHJveF9tZW1iZXJzX2NvdW50OgogICAgICAgIHByaW50KGYne2Vycm9yfXtsZ30gTm8gbWVtYmVycyB0byBhZGQhJykKICAgICAgICBjb250aW51ZQogICAgcHJpbnQoZid7aW5mb317bGd9IFN0YXJ0OiB7d317aW5kZXh9JykKICAgICNhZGRpbmdfc3RhdHVzID0gMAogICAgcGVlcl9mbG9vZF9zdGF0dXMgPSAwCiAgICBmb3IgdXNlciBpbiBtZW1iZXJzW2luZGV4OnN0b3BdOgogICAgICAgIGluZGV4ICs9IDEKICAgICAgICBpZiBwZWVyX2Zsb29kX3N0YXR1cyA9PSAxMDoKICAgICAgICAgICAgcHJpbnQoZid7ZXJyb3J9e3J9IFRvbyBtYW55IFBlZXIgRmxvb2QgRXJyb3JzISBDbG9zaW5nIHNlc3Npb24uLi4nKQogICAgICAgICAgICBicmVhawogICAgICAgIHRyeToKICAgICAgICAgICAgaWYgY2hvaWNlID09IDA6CiAgICAgICAgICAgICAgICBjKEludml0ZVRvQ2hhbm5lbFJlcXVlc3QodGFyZ2V0X2RldGFpbHMsIFt1c2VyXSkpCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBjKEFkZENoYXRVc2VyUmVxdWVzdCh0YXJnZXRfZGV0YWlscy5pZCwgdXNlciwgNDIpKQogICAgICAgICAgICB1c2VyX2lkID0gdXNlci5maXJzdF9uYW1lCiAgICAgICAgICAgIHRhcmdldF90aXRsZSA9IHRhcmdldF9lbnRpdHkudGl0bGUKICAgICAgICAgICAgcHJpbnQoZid7cGx1c317Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIHtjeX17dXNlcl9pZH0ge2xnfS0tPiB7Y3l9e3RhcmdldF90aXRsZX0nKQogICAgICAgICAgICAjcHJpbnQoZid7aW5mb317Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIFNsZWVwIDEgc2Vjb25kJykKICAgICAgICAgICAgYWRkaW5nX3N0YXR1cyArPSAxCiAgICAgICAgICAgIHByaW50KGYne2luZm99e2dyZXl9IFVzZXI6IHtjeX17YWNjX25hbWV9e2xnfSAtLSBTbGVlcCB7d317c2xlZXBfdGltZX0ge2xnfXNlY29uZChzKScpCiAgICAgICAgICAgIHRpbWUuc2xlZXAoc2xlZXBfdGltZSkKICAgICAgICBleGNlcHQgVXNlclByaXZhY3lSZXN0cmljdGVkRXJyb3I6CiAgICAgICAgICAgIHByaW50KGYne21pbnVzfXtncmV5fSBVc2VyOiB7Y3l9e2FjY19uYW1lfXtsZ30gLS0ge3J9VXNlciBQcml2YWN5IFJlc3RyaWN0ZWQgRXJyb3InKQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGV4Y2VwdCBQZWVyRmxvb2RFcnJvcjoKICAgICAgICAgICAgcHJpbnQoZid7ZXJyb3J9e2dyZXl9IFVzZXI6IHtjeX17YWNjX25hbWV9e2xnfSAtLSB7cn1QZWVyIEZsb29kIEVycm9yLicpCiAgICAgICAgICAgIHBlZXJfZmxvb2Rfc3RhdHVzICs9IDEKICAgICAgICAgICAgY29udGludWUKICAgICAgICBleGNlcHQgQ2hhdFdyaXRlRm9yYmlkZGVuRXJyb3I6CiAgICAgICAgICAgIHByaW50KGYne2Vycm9yfXtyfSBDYW5cJ3QgYWRkIHRvIGdyb3VwLiBDb250YWN0IGdyb3VwIGFkbWluIHRvIGVuYWJsZSBtZW1iZXJzIGFkZGluZycpCiAgICAgICAgICAgIGlmIGluZGV4IDwgYXBwcm94X21lbWJlcnNfY291bnQ6CiAgICAgICAgICAgICAgICBsb2dfc3RhdHVzKHNjcmFwZWRfZ3JwLCBpbmRleCkKICAgICAgICAgICAgZXhpdF93aW5kb3coKQogICAgICAgIGV4Y2VwdCBVc2VyQmFubmVkSW5DaGFubmVsRXJyb3I6CiAgICAgICAgICAgIHByaW50KGYne2Vycm9yfXtncmV5fSBVc2VyOiB7Y3l9e2FjY19uYW1lfXtsZ30gLS0ge3J9QmFubmVkIGZyb20gd3JpdGluZyBpbiBncm91cHMnKQogICAgICAgICAgICBicmVhawogICAgICAgIGV4Y2VwdCBDaGF0QWRtaW5SZXF1aXJlZEVycm9yOgogICAgICAgICAgICBwcmludChmJ3tlcnJvcn17Z3JleX0gVXNlcjoge2N5fXthY2NfbmFtZX17bGd9IC0tIHtyfUNoYXQgQWRtaW4gcmlnaHRzIG5lZWRlZCB0byBhZGQnKQogICAgICAgICAgICBicmVhawogICAgICAgIGV4Y2VwdCBVc2VyQWxyZWFkeVBhcnRpY2lwYW50RXJyb3I6CiAgICAgICAgICAgIHByaW50KGYne21pbnVzfXtncmV5fSBVc2VyOiB7Y3l9e2FjY19uYW1lfXtsZ30gLS0ge3J9VXNlciBpcyBhbHJlYWR5IGEgcGFydGljaXBhbnQnKQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGV4Y2VwdCBGbG9vZFdhaXRFcnJvciBhcyBlOgogICAgICAgICAgICBwcmludChmJ3tlcnJvcn17cn0ge2V9JykKICAgICAgICAgICAgYnJlYWsKICAgICAgICBleGNlcHQgVmFsdWVFcnJvcjoKICAgICAgICAgICAgcHJpbnQoZid7ZXJyb3J9e3J9IEVycm9yIGluIEVudGl0eScpCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0OgogICAgICAgICAgICBwcmludChmJ3tlcnJvcn17cn0gLS0tLSBBZGRpbmcgVGVybWluYXRlZCAtLS0tJykKICAgICAgICAgICAgaWYgaW5kZXggPCBsZW4obWVtYmVycyk6CiAgICAgICAgICAgICAgICBsb2dfc3RhdHVzKHNjcmFwZWRfZ3JwLCBpbmRleCkKICAgICAgICAgICAgZXhpdF93aW5kb3coKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICAgICAgcHJpbnQoZid7ZXJyb3J9IHtlfScpCiAgICAgICAgICAgIGNvbnRpbnVlCiNnbG9iYWwgYWRkaW5nX3N0YXR1cywgYXBwcm94X21lbWJlcnNfY291bnQKaWYgYWRkaW5nX3N0YXR1cyAhPSAwOgogICAgcHJpbnQoZiJcbntpbmZvfXtsZ30gQWRkaW5nIHNlc3Npb24gZW5kZWQiKQp0cnk6CiAgICBpZiBpbmRleCA8IGFwcHJveF9tZW1iZXJzX2NvdW50OgogICAgICAgIGxvZ19zdGF0dXMoc2NyYXBlZF9ncnAsIGluZGV4KQogICAgICAgIGV4aXRfd2luZG93KCkKZXhjZXB0OgogICAgZXhpdF93aW5kb3coKQo==='))
+
+from telethon.sync import TelegramClient
+from telethon.tl.types import InputPeerChannel
+from telethon.errors.rpcerrorlist import PeerFloodError, UserPrivacyRestrictedError, PhoneNumberBannedError, ChatAdminRequiredError
+from telethon.errors.rpcerrorlist import ChatWriteForbiddenError, UserBannedInChannelError, UserAlreadyParticipantError, FloodWaitError
+from telethon.tl.functions.channels import InviteToChannelRequest
+import sys
+from telethon.tl.functions.messages import ImportChatInviteRequest, AddChatUserRequest
+from telethon.tl.functions.channels import JoinChannelRequest
+from telethon.tl.types import UserStatusRecently
+import time
+import random
+from colorama import init, Fore
+import os
+import pickle
+
+
+init()
+
+
+r = Fore.RED
+lg = Fore.GREEN
+rs = Fore.RESET
+w = Fore.WHITE
+grey = '\033[97m'
+cy = Fore.CYAN
+ye = Fore.YELLOW
+colors = [r, lg, w, ye, cy]
+info = lg + '[' + w + 'i' + lg + ']' + rs
+error = lg + '[' + r + '!' + lg + ']' + rs
+success = w + '[' + lg + '*' + w + ']' + rs
+INPUT = lg + '[' + cy + '~' + lg + ']' + rs
+plus = w + '[' + lg + '+' + w + ']' + rs
+minus = w + '[' + lg + '-' + w + ']' + rs
+
+def banner():
+    b = [          
+    '  Telegram pro member adder'
+            ' Karma adder ',
+'By - @TheTeleGramPro    '                                               
+    ]
+    for char in b:
+        print(f'{random.choice(colors)}{char}{rs}')
+    print(f'{lg}  Version: {w}3.2{lg} | Author: {w} Telegram pro |team Karma{rs}\n')
+
+
+def clr():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+accounts = []
+f = open('vars.txt', 'rb')
+while True:
+    try:
+        accounts.append(pickle.load(f))
+    except EOFError:
+        break
+
+print('\n' + info + lg + ' Checking for banned accounts...' + rs)
+for a in accounts:
+    phn = a[0]
+    print(f'{plus}{grey} Checking {lg}{phn}')
+    clnt = TelegramClient(f'sessions/{phn}', 3910389, '86f861352f0ab76a251866059a6adbd6')
+    clnt.connect()
+    banned = []
+    if not clnt.is_user_authorized():
+        try:
+            clnt.send_code_request(phn)
+            print('OK')
+        except PhoneNumberBannedError:
+            print(f'{error} {w}{phn} {r}is banned!{rs}')
+            banned.append(a)
+    for z in banned:
+        accounts.remove(z)
+        print(info+lg+' Banned account removed[Remove permanently using manager.py]'+rs)
+    time.sleep(0.5)
+    clnt.disconnect()
+
+
+print(info+' Sessions created!')
+clr()
+banner()
+def log_status(scraped, index):
+    with open('status.dat', 'wb') as f:
+        pickle.dump([scraped, int(index)], f)
+        f.close()
+    print(f'{info}{lg} Session stored in {w}status.dat{lg}')
+    
+
+def exit_window():
+    input(f'\n{cy} Press enter to exit...')
+    clr()
+    banner()
+    sys.exit()
+
+try:
+
+    with open('status.dat', 'rb') as f:
+        status = pickle.load(f)
+        f.close()
+        lol = input(f'{INPUT}{cy} Resume scraping members from {w}{status[0]}{lg}? [y/n]: {r}')
+        if 'y' in lol:
+            scraped_grp = status[0] ; index = int(status[1])
+        else:
+            if os.name == 'nt': 
+                os.system('del status.dat')
+            else: 
+                os.system('rm status.dat')
+            scraped_grp = input(f'{INPUT}{cy} Public/Private group link to scrape members: {r}')
+            index = 0
+except:
+    scraped_grp = input(f'{INPUT}{cy} Public/Private group link to scrape members: {r}')
+    index = 0
+accounts = []
+f = open('vars.txt', 'rb')
+while True:
+    try:
+        accounts.append(pickle.load(f))
+    except EOFError:
+        break
+
+print(f'{info}{lg} Total accounts: {w}{len(accounts)}')
+number_of_accs = int(input(f'{INPUT}{cy} Enter number of accounts to use: {r}'))
+print(f'{info}{cy} Choose an option{lg}')
+print(f'{cy}[0]{lg} Add to public group')
+print(f'{cy}[1]{lg} Add to private group')
+choice = int(input(f'{INPUT}{cy} Enter choice: {r}'))
+if choice == 0:
+    target = str(input(f'{INPUT}{cy} Enter public group link: {r}'))
+else:
+    target = str(input(f'{INPUT}{cy} Enter private group link: {r}'))
+print(f'{grey}_'*50)
+to_use = [x for x in accounts[:number_of_accs]]
+for l in to_use: accounts.remove(l)
+with open('vars.txt', 'wb') as f:
+    for a in accounts:
+        pickle.dump(a, f)
+    for ab in to_use:
+        pickle.dump(ab, f)
+    f.close()
+sleep_time = int(input(f'{INPUT}{cy} Enter delay time per request{w}[{lg}0 for None{w}]: {r}'))
+
+print(f'{success}{lg} -- Adding members from {w}{len(to_use)}{lg} account(s) --')
+adding_status = 0
+approx_members_count = 0
+for acc in to_use:
+    stop = index + 60
+    c = TelegramClient(f'sessions/{acc[0]}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
+    print(f'{plus}{grey} User: {cy}{acc[0]}{lg} -- {cy}Starting session... ')
+    c.start(acc[0])
+    acc_name = c.get_me().first_name
+    try:
+        if '/joinchat/' in scraped_grp:
+            g_hash = scraped_grp.split('/joinchat/')[1]
+            try:
+                c(ImportChatInviteRequest(g_hash))
+                print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to scrape')
+            except UserAlreadyParticipantError:
+                pass 
+        else:
+            c(JoinChannelRequest(scraped_grp))
+            print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to scrape')
+        scraped_grp_entity = c.get_entity(scraped_grp)
+        if choice == 0:
+            c(JoinChannelRequest(target))
+            print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to add')
+            target_entity = c.get_entity(target)
+            target_details = InputPeerChannel(target_entity.id, target_entity.access_hash)
+        else:
+            try:
+                grp_hash = target.split('/joinchat/')[1]
+                c(ImportChatInviteRequest(grp_hash))
+                print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to add')
+            except UserAlreadyParticipantError:
+                pass
+            target_entity = c.get_entity(target)
+            target_details = target_entity
+    except Exception as e:
+        print(f'{error}{r} User: {cy}{acc_name}{lg} -- Failed to join group')
+        print(f'{error} {r}{e}')
+        continue
+    print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- {cy}Retrieving entities...')
+
+    try:
+        members = []
+        members = c.get_participants(scraped_grp_entity, aggressive=True)
+    except Exception as e:
+        print(f'{error}{r} Couldn\'t scrape members')
+        print(f'{error}{r} {e}')
+        continue
+    approx_members_count = len(members)
+    assert approx_members_count != 0
+    if index >= approx_members_count:
+        print(f'{error}{lg} No members to add!')
+        continue
+    print(f'{info}{lg} Start: {w}{index}')
+
+    peer_flood_status = 0
+    for user in members[index:stop]:
+        index += 1
+        if peer_flood_status == 10:
+            print(f'{error}{r} Too many Peer Flood Errors! Closing session...')
+            break
+        try:
+            if choice == 0:
+                c(InviteToChannelRequest(target_details, [user]))
+            else:
+                c(AddChatUserRequest(target_details.id, user, 42))
+            user_id = user.first_name
+            target_title = target_entity.title
+            print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- {cy}{user_id} {lg}--> {cy}{target_title}')
+            
+            adding_status += 1
+            print(f'{info}{grey} User: {cy}{acc_name}{lg} -- Sleep {w}{sleep_time} {lg}second(s)')
+            time.sleep(sleep_time)
+        except UserPrivacyRestrictedError:
+            print(f'{minus}{grey} User: {cy}{acc_name}{lg} -- {r}User Privacy Restricted Error')
+            continue
+        except PeerFloodError:
+            print(f'{error}{grey} User: {cy}{acc_name}{lg} -- {r}Peer Flood Error.')
+            peer_flood_status += 1
+            continue
+        except ChatWriteForbiddenError:
+            print(f'{error}{r} Can\'t add to group. Contact group admin to enable members adding')
+            if index < approx_members_count:
+                log_status(scraped_grp, index)
+            exit_window()
+        except UserBannedInChannelError:
+            print(f'{error}{grey} User: {cy}{acc_name}{lg} -- {r}Banned from writing in groups')
+            break
+        except ChatAdminRequiredError:
+            print(f'{error}{grey} User: {cy}{acc_name}{lg} -- {r}Chat Admin rights needed to add')
+            break
+        except UserAlreadyParticipantError:
+            print(f'{minus}{grey} User: {cy}{acc_name}{lg} -- {r}User is already a participant')
+            continue
+        except FloodWaitError as e:
+            print(f'{error}{r} {e}')
+            break
+        except ValueError:
+            print(f'{error}{r} Error in Entity')
+            continue
+        except KeyboardInterrupt:
+            print(f'{error}{r} ---- Adding Terminated ----')
+            if index < len(members):
+                log_status(scraped_grp, index)
+            exit_window()
+        except Exception as e:
+            print(f'{error} {e}')
+            continue
+if adding_status != 0:
+    print(f"\n{info}{lg} Adding session ended")
+try:
+    if index < approx_members_count:
+        log_status(scraped_grp, index)
+        exit_window()
+except:
+    exit_window()
