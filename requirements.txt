@@ -1,0 +1,4 @@
+telethon==1.16.4
+requests
+colorama==0.4.3
+lolcat
